@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: orangered; 
+    border-radius: 10px;
+  }
+
+#meni {
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    
+}
+
+#meni li{
+    margin-right: 20px;
+}
+
+#meni li a{
+    text-decoration: none;
+    font-size: 18px;
+}
+#meni li a:hover{
+    text-decoration: underline;
+    color: #ff4500;
+}
+
+#navbarSupportedContent{
+    flex-grow: 0;
+}
+
+
+#cover{
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/cover.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#text-cover{
+    width: 50%;
+    text-align: center;
+    margin: 0px auto;
+    
+}
+#text-cover h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#text-cover h4{
+    font-size: 50px;
+    
+}
+.arrow{
+    font-size: 80px;
+    animation: smoothbounceball 0.5s; 
+    animation-direction: alternate; 
+    animation-iteration-count: infinite; 
+    color: #ff4500;
+}
+a{
+    color: black;
+}
+
+.items img{
+    width: 100%;
+}
+#text-banners{
+    text-align: center;
+    
+}
+#text-banners h2{
+    font-size: 50px;
+}
+
+#btn{
+    margin-top: 20px;
+    width: 200px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    font-size: 20px;
+}
+.naslov{
+    text-align: center;
+}
+.moreTxt1{
+    display: none;
+}
+.readMore0, .readMore1, .readMore2{
+    color: #ff4500;
+}
+
+img{
+    width: 100%;
+}
+
+#abt{
+    display: flex;
+    align-items: center;
+   
+}
+.slika4Style{
+    width:100%;
+    box-shadow: 2px 2px 2px 2px #3e3e3e;   
+}
+
+.items{
+    border-bottom: 1px solid orangered;
+}
+
+.dugme1{
+        width: 30%;
+        height: 50px;
+        border-radius: 5px;
+        background-color: #ff4500;
+}
+
+#abt1, #abt2, #aboutUsImage, #aboutUsContent{
+    margin: 0px auto;
+}
+
+.items{
+    margin: 0px auto;
+    text-align: center;
+    border: 1px solid #000000;
+    box-shadow: 1px 1px 5px #3e3e3e;
+    transition: transform .2s;
+}
+.abt2{
+    transition: transform .2s;
+}
+.abt2:hover{
+    transform: scale(1.1);
+}
+.items:hover{
+    transform: scale(1.1);
+}
+
+.listStyle{
+    list-style-type: circle;
+}
+.iconsStyle{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.bannerPasus{
+    font-size: 20px;
+}
+
+.aboutTitle{
+    text-align: center;
+}
+ #galleryTitle{
+    text-align: center;
+ }
+
+ #vrh{
+    border-radius: 50%;
+    width: 5%;
+    height: 50px;
+ }
+
+ .itemGallery{
+    margin: 0px auto;
+ }
+
+ #aboutUsContent{
+    background-color: #d3d3d3;
+    border-radius: 5%;
+ }
+
+ #aboutImg{
+    border-radius: 5%;
+ }
+
+ .aboutImage{
+    transform: scale(1.06);
+    transition: transform .8s;
+ }
+
+ #galleryMainDiv{
+    background-color: #d3d3d3;
+ }
+
+ .galleryImg{
+    margin: 10px auto;
+ }
+ .itemGallery {
+    position: relative;
+   
+  }
+ .opacity{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fffff7;
+  color: #000000;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+    
+ }
+ .itemGallery:hover .opacity {
+    visibility: visible;
+    opacity: 0.9;
+  }
+  .galleryTitle{
+    margin-top: 10px;
+  }
+  .galleryPasus{
+    font-size: 20px;
+  }
+
+ .ourTeamImage{
+    width: 100%;
+ }
+
+.teamTitle0, .teamTitle1, .teamTitle2{
+    font-size: 20px;
+    margin: 10px auto;
+    
+}
+#teamPasus0, #teamPasus1, #teamPasus2{
+    display: none;
+}
+ .ourTeamImage{
+    box-shadow: 2px 2px 5px #d3d3d3;
+ }
+ .moreTxt0, .moreTxt1, .moreTxt2{
+    display: none;
+ }
+
+ .listWork{
+    display: none;
+ }
+
+ .readMoreWorker{
+    font-size: 10px;
+ }
+ .fa-arrow-left{
+    color: black;
+    animation: bounceLeft 1s infinite;
+    color: #ff4500;
+ }
+
+ .items-team{
+    margin: 0px auto;
+ }
+
+ @keyframes bounceLeft {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+    40% {
+      -ms-transform: translateX(10px);
+      transform: translateX(10px);
+    }
+    60% {
+      -ms-transform: translateX(5px);
+      transform: translateX(5px);
+    }
+  }
+
+  @keyframes smoothbounceball{ 
+    from { transform: translate3d(0, 0, 0);} 
+    to { transform: translate3d(0, 30px, 0);} 
+} 
+
+#send{
+    background-color: #ff4500;
+    color: #ffffff;
+}
+
+
+ .nav-items{
+    list-style-type: none;
+ }
+ .nav-items a{
+    text-decoration: none;
+ }
+
+ .nav-items a:hover{
+    color: #ff4500;
+ }
+ .fa-facebook, .fa-instagram, .fa-sitemap{
+    font-size: 30px;
+    margin-right: 10px;
+    text-align: center;
+ }
+ 
+ .icon:hover{
+    color:#ff4500;
+ }
+
+ #div1{
+    text-align: center;
+ }
+
+ footer{
+   margin-top: 20px;
+   background-color: #d3d3d3;
+ }
+.green{
+    border: 1px solid #008000;
+}
+.red{
+    border: 1px solid #ff0000;
+}
+
+#radio, #porukaCheck{
+    color:#ff0000;
+}
+#document {
+    text-decoration: none;
+    
+}
+
+#backToTop{
+    width: 50px;
+    height: 50px;
+    background-color: #ff4500;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 1024px){
+    #text-cover h1{
+        font-size: 50px;
+        font-weight: bold;
+    }
+    
+    #text-cover h4{
+        font-size: 40px;
+        
+    }
+    .arrow{
+        font-size: 60px;
+        animation: smoothbounceball 0.5s; 
+        animation-direction: alternate; 
+        animation-iteration-count: infinite; 
+        color: #ff4500;
+    }
+    .teamTitle0, .teamTitle1, .teamTitle2{
+        font-size: 20px;
+    }
+    .fa-arrow-left{
+        font-size: 15px;
+    }
+
+    #footerTitle{
+        font-size: 20px;
+    }
+}
+
+@media screen  and (max-width: 850px) {
+    #text-cover h1{
+        font-size: 45px;
+        font-weight: bold;
+    }
+    #meni{
+        text-align: center;
+    }
+    
+    #text-cover h4{
+        font-size: 40px;
+        
+    }
+    .arrow{
+        font-size: 55px;
+        animation: smoothbounceball 0.5s; 
+        animation-direction: alternate; 
+        animation-iteration-count: infinite; 
+        color: #ff4500;
+    }
+    #footerTitle{
+        font-size: 16px;
+    }
+
+    .fa-facebook, .fa-instagram, .fa-sitemap{
+        font-size: 20px;
+        margin-right: 10px;
+        text-align: center;
+     }
+
+     .fa-trowel-bricks, .fa-hammer, .fa-plug{
+        font-size: 30px;
+     }
+
+
+     .bannerPasus,.readMore0, .readMore1, .readMore2{
+        font-size: 18px;
+     }
+
+     .moreTxt0, .moreTxt1, .moreTxt2,.dugme1,#aboutText,.teamPasus, .listStyle, .form-check-label , .nav-items{
+        font-size: 15px;
+     }
+   
+     #galleryTitle, #ourTeamTitle,#aboutTitle{
+        font-size: 25px;
+     }
+     .teamTitle0, .teamTitle1, .teamTitle2{
+        font-size: 20px
+     }
+    
+     #formDiv h2{
+        font-size: 20px;
+     }
+     #formDiv p{
+        font-size: 15px;
+     }
+     #formDiv h3{
+        font-size: 18px;
+     }
+    #send, #reset{
+        font-size: 15px;
+     }
+    }
+    #document {
+        text-decoration: none;
+        font-size: 15px;
+        
+    }
+
+    @media screen  and (max-width: 767px){
+        #cover{
+            height: 300px;
+        }
+        #text-cover h1{
+            font-size: 40px;
+            font-weight: bold;
+        }
+        
+        #text-cover h4{
+            font-size: 36px;
+            
+        }
+        .arrow{
+            font-size: 50px;
+            
+        }
+        .bannerPasus{
+            font-size: 15px;
+        }
+
+        .readMore0, .readMore1, .readMore2{
+            font-size: 15px;
+        }
+        #abt1 h3{
+            font-size: 22px;
+        }
+        #abt p{
+            font-size: 15px;
+        }
+        #abt1Title{
+            font-size: 17px;
+        }
+        #dugme1{
+            font-size: 12px;
+        }
+        #aboutTitle{
+            font-size: 22px;
+        }
+        #aboutText{
+            font-size: 15px;
+        }
+
+        .teamTitle0, .teamTitle1, .teamTitle2{
+            font-size: 14px;
+        }
+        .fa-arrow-left{
+            font-size: 11px;
+        }
+    }
+
+   
+
+@media screen and (max-width: 576px){
+        .navbar-brand{
+            width: 38%;
+        }
+
+        #text-cover h1{
+            font-size: 25px;
+           
+        }
+        #text-cover h4{
+            font-size: 22px;
+           
+        }
+        #abt2, #aboutUsContent{
+            margin-top: 15px;
+        }
+        .teamTitle0, .teamTitle1, .teamTitle2{
+            font-size: 16px;
+        }
+        .teamPasus{
+            font-size: 14px;
+        }
+        .fa-arrow-left{
+            font-size: 18px;
+        }
+        .items{
+            margin-bottom: 15px;
+        }
+        .fa-facebook, .fa-instagram, .fa-sitemap{
+            font-size: 12px;
+            
+         }
+         #footerTitle{
+            font-size: 11px;
+         }
+         .nav-items{
+            font-size: 11px;
+         }
+         #backToTop{
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+         }
+         
+}
+
+@media screen and (max-width: 380px){
+    #backToTop{
+        width: 24px;
+        height: 24px;
+        font-size: 18px;
+        right: 5px;
+        bottom: 5px;
+     }
+     #imeSpan, #prezimeSpan, #emailSpan, #radio, #porukaCheck{
+        font-size: 13px;
+     }
+
+     
+}
+
+@media screen and (max-width: 340px){
+    #backToTop{
+        width: 22px;
+        height: 22px;
+        font-size: 16px;
+        
+     }
+     .fa-facebook, .fa-instagram, .fa-sitemap, .fa-rss, .fa-file{
+        font-size: 15px;
+        
+     }
+
+     
+}
+
