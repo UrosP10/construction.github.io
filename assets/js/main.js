@@ -1,7 +1,7 @@
 //dynamic menu start
 let meni = document.querySelector("#meni");
-let links = ["index.html","#text-banners","#aboutUsDiv","#gallery","#ourTeamDiv","#formDiv","author.html"];
-let linksName = ["Početna","Usluge","O nama","Galerija","Naš Tim","Kontakt","Autor"];
+let links = ["index.html","#text-banners","#aboutUsDiv","#gallery","#ourTeamDiv","#formDiv"];
+let linksName = ["Početna","Usluge","O nama","Galerija","Naš Tim","Kontakt"];
 let listTag = ""
 for(let i in links){
     listTag+="<li class='nav-item'><a href=" + links[i] + ">"+ linksName[i] + "</a></li>";
